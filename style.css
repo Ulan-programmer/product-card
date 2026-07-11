@@ -16,8 +16,8 @@ body {
     line-height: 78px;
     color: #515076;
     text-align: center;
-    margin: 220px 100px 110px 100px;
-    padding: 0;
+    padding-top: 116px;
+    padding-bottom: 110px;
 }
 
 
@@ -39,6 +39,7 @@ body {
     padding: 20px 20px 20px 20px;
     border-radius: 5px;
 }
+
 .card__main-text-composition,
 .card__main-text-effect,
 .card__main-text-composition-list {
@@ -50,11 +51,6 @@ body {
     list-style-type: circle;
 }
 
-.list {
-    display: block;
-    justify-content: left;
-
-}
 
 .card__skin-type {
     font-weight: 400;
@@ -91,13 +87,15 @@ body {
     margin-top: 30px;
     color: #515076;
 }
-.product__price-tag--changes{
+
+.product__price-tag--changes {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     margin-top: 30px;
     color: hsl(0, 90%, 49%);
 }
+
 @font-face {
     font-family: 'Montserrat';
     src: url('font/Montserrat-Medium.ttf')
