@@ -1,6 +1,7 @@
 body {
     background-color: #ffffff;
     font-family: "Montserrat", sans-serif;
+    max-width: 1400px;
 }
 
 .background {
@@ -11,6 +12,7 @@ body {
 }
 
 .main-title {
+    text-align: center;
     font-weight: 400;
     font-size: 70px;
     line-height: 78px;
@@ -26,6 +28,7 @@ body {
     justify-content: center;
     color: #ffffff;
     max-width: 1400px;
+    max-width: 1300px;
     gap: 20px;
 }
 
@@ -92,9 +95,24 @@ body {
     color: #515076;
 }
 
+button{
+    padding: 10px 20px;
+    border-radius: 3px;
+    background-color: #515076;
+    color: rgb(15, 1, 1);
+    border: 1px;
+}
 
+
+.multi-color-button {
+    background-color: #4CAF50; 
+ 
+}
+
+.multi-color-button.active-color {
+    background-color: #FF5722;
+}
 
 @font-face {
     font-family: 'Montserrat';
     src: url('font/Montserrat-Medium.ttf')
-}
