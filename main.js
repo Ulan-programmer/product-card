@@ -54,14 +54,13 @@ mainTitle.addEventListener('mouseover' , () => {
 console.log (mainTitle.textContent);
 })  
 
+// кнопка меняет цвет при нажатии на нее
 
 const colorChangeBotton = document.querySelector('.multi-color-button');
-
 colorChangeBotton.addEventListener('click', function () {
-    // Проверяем, есть ли класс у кнопки
     if (colorChangeBotton.classList.contains('active-color')) {
-        colorChangeBotton.classList.remove('active-color'); // Если есть — удаляем
+        colorChangeBotton.classList.remove('active-color'); 
     } else {
-        colorChangeBotton.classList.add('active-color');    // Если нет — добавляем
+        colorChangeBotton.classList.add('active-color');    
     }
 });
