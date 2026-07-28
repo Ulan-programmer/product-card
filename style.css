@@ -95,7 +95,7 @@ body {
     color: #515076;
 }
 
-button{
+button {
     padding: 10px 20px;
     border-radius: 3px;
     background-color: #515076;
@@ -103,16 +103,29 @@ button{
     border: 1px;
 }
 
-
+.button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px
+}
 .multi-color-button {
-    background-color: #4CAF50; 
- 
+    background-color: #aa9b5a81;
 }
 
-.multi-color-button.active-color {
+.multi-color-button.active {
     background-color: #FF5722;
 }
 
-@font-face {
-    font-family: 'Montserrat';
-    src: url('font/Montserrat-Medium.ttf')
+.multi-color-button-v2 {
+    background-color: #12d4e2;
+}
+
+.multi-color-button-v2.act {
+    background-color: #7013e9;
+}
+
+    @font-face {
+        font-family: 'Montserrat';
+        src: url('font/Montserrat-Medium.ttf')
+    }
