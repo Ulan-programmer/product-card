@@ -54,13 +54,31 @@ mainTitle.addEventListener('mouseover' , () => {
 console.log (mainTitle.textContent);
 })  
 
-// кнопка меняет цвет при нажатии на нее
+
+
+// кнопка меняет цвет во время нажатия на нее.
 
 const colorChangeBotton = document.querySelector('.multi-color-button');
-colorChangeBotton.addEventListener('click', function () {
-    if (colorChangeBotton.classList.contains('active-color')) {
-        colorChangeBotton.classList.remove('active-color'); 
+
+
+colorChangeBotton.addEventListener('mousedown', () => {
+    colorChangeBotton.style.backgroundColor = '#FF5722';
+});
+colorChangeBotton.addEventListener('mouseup', () => {
+    colorChangeBotton.style.backgroundColor = '#aa9b5a81';
+});
+colorChangeBotton.addEventListener('mouseleave', () => {
+    colorChangeBotton.style.backgroundColor = '#aa9b5a81';
+});
+
+// кнопка меняет цвет при нажатии на нее
+
+const colorChangeBtn = document.querySelector('.multi-color-button-v2');
+
+colorChangeBtn.addEventListener('click', function () {
+    if (colorChangeBtn.classList.contains('act')) {
+        colorChangeBtn.classList.remove('act'); 
     } else {
-        colorChangeBotton.classList.add('active-color');    
+        colorChangeBtn.classList.add('act');    
     }
 });
