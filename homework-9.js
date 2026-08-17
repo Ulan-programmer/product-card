@@ -1,7 +1,7 @@
 
 // 1.Создал массив чисел от 1 до 10. Отфильтровл его таким образом, что бы мы получили массив чисел, начиная с 5.
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const newCutNumbers = numbers.slice (0, 5);
+const newCutNumbers = numbers.slice (4, 10);
 console.log(newCutNumbers);
 
 
@@ -15,13 +15,16 @@ console.log(hasTable);
 //4.Написал функцию, которая аргументом будет принимать массив и изменять его порядок на противоположный ("переворачивать") .
 //Два вышеуказанных массива с помощью этой функции перевернул.
 
-const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const reverseNumbers = number.reverse();
-console.log(reverseNumbers);
 
-const furnitures = ['chair', 'table', 'sofa', 'bed'];
-const reverseFurniture = furnitures.reverse();
-console.log(reverseFurniture);
+function reverseNumbers (numbers) {
+  return [...numbers].reverse ()
+}
+console.log(reverseNumbers(numbers));
+
+function furnituresReverse (furniture){
+  return [...furniture].reverse ()
+}
+console.log(furnituresReverse(furniture));
 
 //5.Добавил файл comments.js, в нём создал константу и в него поместил первые 10 объектов массива из ссылки.
 
