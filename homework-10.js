@@ -9,8 +9,10 @@ function getCardsCount() {
     return count;
   }
 
-  alert('Введи число от 1 до 5.');
-  return getCardsCount(); 
+  else if (input === null) {
+    return null;
+  }
+
 }
 
 function renderCards(cardsArray) {
@@ -22,18 +24,18 @@ function renderCards(cardsArray) {
   cardsArray.forEach(product => {
     const cardClone = template.content.cloneNode(true);
 
-  
+
     const imgElement = cardClone.querySelector('.card__image');
     imgElement.src = product.image;
     imgElement.alt = product.name;
 
-   
+
     cardClone.querySelector('.card__skin-type').textContent = product.skinType;
     cardClone.querySelector('.card__product-name').textContent = product.name;
     cardClone.querySelector('.card__main-text-effect').textContent = product.effect;
     cardClone.querySelector('.product__price').textContent = product.price;
 
-  
+
     const listContainer = cardClone.querySelector('.card__main-text-composition-list');
     product.composition.forEach(item => {
       const li = document.createElement('li');
